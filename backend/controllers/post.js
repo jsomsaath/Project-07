@@ -3,6 +3,7 @@ const models = require ('../models/index');
 const Post = models.posts; 
 const User = models.users; 
 
+//Creating post
 exports.createPost = (req, res, next) => { 
     if (!req.file) {
         return Post.creat({
@@ -24,6 +25,7 @@ exports.createPost = (req, res, next) => {
     }
 }; 
 
+//Deleting the post if we're the one who created it
 exports.deletePost = (req, res, next) => { 
     Post.findOne ({
         where: {id: req.params.id}
@@ -33,6 +35,7 @@ exports.deletePost = (req, res, next) => {
     .catch(error => res.status(400).json({error}));
 };
 
+//Seeing all the post
 exports.getAllPosts = (req, res, next) => {
     Post.findAll({
         order:[[
