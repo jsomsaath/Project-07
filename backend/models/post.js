@@ -16,7 +16,6 @@ module.exports = (sequelize, Sequelize) => sequelize.define("post", {
     allowNull: false
   },
   
-  
 },
 
  {

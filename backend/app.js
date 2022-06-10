@@ -1,11 +1,12 @@
 //Calling all the module we're going to use
 const express = require('express');
-const dotenv = require('dotenv');
 const path = require('path');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 
 const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 app.use(express.json());
