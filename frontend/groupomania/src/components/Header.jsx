@@ -12,8 +12,8 @@ function Header() {
                     <img src={logo} alt='Groupomania logo' className='logo'/>
                 </div>
             <nav className='menu flexcenter'>
-                <Link className='homeLink flexcenter' to='/login'>Login</Link>
-                <Link className='homeLink flexcenter' to='/signup'>Sign up</Link>
+                <Link className='homeLink flexcenter decorationnone' to='/login'>Login</Link>
+                <Link className='homeLink flexcenter decorationnone' to='/signup'>Sign up</Link>
             </nav>
             </div>
         </header>
