@@ -1,8 +1,7 @@
 .header {
     color: #4E5166;
 	text-align: right;
-	padding: 32px;
-	border-bottom: solid 3px #4E5166;
+	border-bottom: solid 3px #FD2D01;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
@@ -10,9 +9,6 @@
 }
 .title{
     padding-left: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .title h1 {
@@ -21,7 +17,8 @@
 
 .logo {
     height: 155px;
-	width: 155px;
+	width: 235px;
+    margin-top: 10px;
 }
 .menu ul{
     font-size: 20px;
@@ -38,3 +35,52 @@
           margin-bottom: 15px;
           width:130px;
         }
+
+.homeLink 
+        {
+    font-size: 20px;
+    width: 100px;
+    height: 99px;       
+        }
+.flexcenter
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexaround
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flexbetween
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flexcolumncenter
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexcolumnaround
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.flexcolumnbetween
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

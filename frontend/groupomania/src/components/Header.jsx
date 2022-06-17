@@ -7,13 +7,13 @@ function Header() {
     return (
         <header>
             <div className='header'>
-                <div className='title'>
+                <div className='title flexcenter'>
                     <h1>Welcome to </h1>
                     <img src={logo} alt='Groupomania logo' className='logo'/>
                 </div>
-            <nav className='menu'>
-                <Link to='/login'>Login</Link>
-                <Link to='/signup'>Sign up</Link>
+            <nav className='menu flexcenter'>
+                <Link className='homeLink flexcenter' to='/login'>Login</Link>
+                <Link className='homeLink flexcenter' to='/signup'>Sign up</Link>
             </nav>
             </div>
         </header>
