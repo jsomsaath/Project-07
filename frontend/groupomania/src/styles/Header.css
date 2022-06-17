@@ -1,0 +1,40 @@
+.header {
+    color: #4E5166;
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px #4E5166;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.title{
+    padding-left: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title h1 {
+    padding-right: 15px;
+}
+
+.logo {
+    height: 45px;
+	width: 45px;
+}
+.menu ul{
+    font-size: 20px;
+    list-style: none;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          margin-top: 0px;
+}
+
+.menu li
+        {
+          padding-top: 40px;
+          margin-bottom: 15px;
+          width:130px;
+        }
