@@ -1,23 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Homepage from './components/Homepage'
-import Post from './components/Post'
-import Header from './components/Header'
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from './app'
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <React.Fragment>
-      <Header />
-    </React.Fragment>
-    <Routes>
-      <Route path='/' element={<Homepage />} />
-      <Route path='/post' element={<Post />} />
-    </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />
+  </React.StrictMode>
 )
