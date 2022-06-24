@@ -6,7 +6,7 @@ import Signup from './pages/Signup'
 import Header from './components/Header'
 import Auth from './context/Auth'
 import Dashboard from './pages/Dashboard'
-import {hasAuth} from './Api/authApi'
+import {hasAuth} from './api/authApi'
 import AuthRoute from './components/AuthRoute'
 
 function App() {

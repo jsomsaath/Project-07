@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import loginIcon from '../assets/loginIcon.png'
 import emailIcon from '../assets/emailIcon.png'
-import passwordIcon from '../assets/passswordIcon.png'
+import passwordIcon from '../assets/passwordIcon.png'
 import axios from '../api/axios'
 import '../styles/login.css'
 
@@ -41,7 +41,7 @@ return (
     <div className="loginBox">
         <img src={loginIcon} alt='Icon login' className="loginIcon" />
         <form className="form" onSubmit={handleSubmit}>
-            <div className="lofinFields">
+            <div className="loginFields">
                 <div className="usernameField">
                     <img src={emailIcon} alt='Icon email' className="userIcon" />
                         <input type='text' name='email' id='email' placeholder='email' className="email" onChange={(event) =>setEmail(event.target.value)} value={email} />
