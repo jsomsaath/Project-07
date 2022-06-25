@@ -1,35 +1,36 @@
 .userIcon, .passwordIcon {
-    height: 30px;
+    height: 25px;
 }
 
-.usernameField, .passwordField {
-    display: flex;
-    justify-content: center;
-}
 
 .loginIcon {
-    height: 50px;
-    width: 50px;
-    border-radius: 150px;
-    border: 2px;
-    border-color: #FD2D01;
-}
-
-.body {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
 }
 
 .loginBox {
-    border: 2px;
     width: 100%;
     height: 100%;
-    padding-top: 100%;
+    text-align: center;
+    padding: 5px;
 }
 
-.loginFields {
+.loginButton {
+    flex-direction: column;
+    width: auto;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 2px solid black;
+    cursor: pointer;
 
+}
+
+.loginButton:hover {
+    background-color: #FFD7D7;
+    color: white;
+    border: 2px solid #FD2D01;
 }
 
 input {
@@ -37,4 +38,47 @@ input {
     height: 20px;
     border-radius: 60px;
     margin-top: 5px;
+}
+
+.flexcenter
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexaround
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flexbetween
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flexcolumncenter
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexcolumnaround
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.flexcolumnbetween
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }

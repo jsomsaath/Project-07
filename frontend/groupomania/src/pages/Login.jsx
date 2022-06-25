@@ -38,23 +38,25 @@ const Login = () => {
     }
 
 return (
-    <div className="loginBox">
-        <img src={loginIcon} alt='Icon login' className="loginIcon" />
-        <form className="form" onSubmit={handleSubmit}>
+    <div className="loginBox flexcolumnaround">
             <div className="loginFields">
-                <div className="usernameField">
+                <div className="flexcenter">
                     <img src={emailIcon} alt='Icon email' className="userIcon" />
                         <input type='text' name='email' id='email' placeholder='email' className="email" onChange={(event) =>setEmail(event.target.value)} value={email} />
                         <div className="email error"></div>
                 </div>
-                <div className="passwordField">
+                <div className="flexcenter">
                     <img src={passwordIcon} alt='Icon password' className="passwordIcon" />
                     <input type='text' name='password' id='password' placeholder='password' className="password" onChange={(event) => setPassword(event.target.value)} value={password} />
                     <div className="password error"></div>
                 </div>
             </div>
-            <button type='submit'>Login</button>
+            <div className="flexcenter">
+            <img src={loginIcon} alt='Icon login' className="loginIcon" />
+        <form className="form" onSubmit={handleSubmit}>
+            <button className="loginButton" type='submit'>Login</button>
         </form>
+        </div>
     </div>
 
 )
