@@ -8,6 +8,7 @@ import Auth from './context/Auth'
 import Dashboard from './pages/Dashboard'
 import {hasAuth} from './api/authApi'
 import AuthRoute from './components/AuthRoute'
+import './styles/app.css'
 
 function App() {
     const [isAuth, setIsAuth] =useState(hasAuth())

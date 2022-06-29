@@ -39,24 +39,36 @@ const Login = () => {
 
 return (
     <div className="loginBox flexcolumnaround">
-            <div className="loginFields">
+        <form className="form">
+                <h1>Welcome back !</h1>
                 <div className="flexcenter">
                     <img src={emailIcon} alt='Icon email' className="userIcon" />
-                        <input type='text' name='email' id='email' placeholder='email' className="email" onChange={(event) =>setEmail(event.target.value)} value={email} />
+                        <input 
+                        type='text' 
+                        name='email' 
+                        id='email' 
+                        placeholder='Email' 
+                        className="email" 
+                        onChange={(event) =>setEmail(event.target.value)} value={email} />
                         <div className="email error"></div>
                 </div>
                 <div className="flexcenter">
                     <img src={passwordIcon} alt='Icon password' className="passwordIcon" />
-                    <input type='text' name='password' id='password' placeholder='password' className="password" onChange={(event) => setPassword(event.target.value)} value={password} />
+                    <input 
+                    type='text' 
+                    name='password' 
+                    id='password' 
+                    placeholder='Password' 
+                    className="password" onChange={(event) => setPassword(event.target.value)} value={password} />
                     <div className="password error"></div>
                 </div>
-            </div>
-            <div className="flexcenter">
+            <div className="flexcenter button">
             <img src={loginIcon} alt='Icon login' className="loginIcon" />
         <form className="form" onSubmit={handleSubmit}>
             <button className="loginButton" type='submit'>Login</button>
         </form>
         </div>
+        </form>
     </div>
 
 )

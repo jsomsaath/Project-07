@@ -19,6 +19,7 @@
 .loginButton {
     flex-direction: column;
     width: auto;
+    padding: 5px;
     font-size: 18px;
     border-radius: 10px;
     background-color: lightgray;
@@ -33,11 +34,23 @@
     border: 2px solid #FD2D01;
 }
 
+.button {
+    padding:15px;
+}
+
 input {
     width: 250px;
     height: 20px;
     border-radius: 60px;
     margin-top: 5px;
+    padding: 15px 8px;
+}
+
+.form > h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
 }
 
 .flexcenter
